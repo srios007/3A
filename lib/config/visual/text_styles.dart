@@ -22,4 +22,14 @@ class Styles {
     fontSize: 14.0,
     fontWeight: FontWeight.w500,
   );
+   static TextStyle hintStyle = TextStyle(
+    color: Color(0xFFB1B1B1),
+    fontSize: 18,
+    fontWeight: FontWeight.w400,
+  );
+  static TextStyle helperStyle = TextStyle(
+    color: Color(0xFFC4C4C4),
+    fontSize: 13,
+    fontWeight: FontWeight.w400,
+  );
 }
