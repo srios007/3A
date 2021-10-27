@@ -36,40 +36,30 @@ class A3TextField extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Container(
-          width: width ?? 100,
-          child: TextFormField(
-            autofocus: autofocus,
-            controller: controller,
-            key: key,
-            validator: validator,
-            autovalidateMode: autovalidateMode,
-            //style: Styles.txtTextLbl(),
-            keyboardAppearance: Brightness.light,
-            textCapitalization: textCapitalization,
-            autocorrect: isAutocorrectActive,
-            textAlign: TextAlign.start,
-            decoration: InputDecoration(
-              helperText: helperText,
-              filled: false,
-              hintText: hintText,
-              hintStyle: Styles.hintStyle,
-              helperStyle: Styles.helperStyle,
-              // enabledBorder: _border,
-              // focusedBorder: _border,
-              // border: _border,
-              // disabledBorder: _border,
-            ),
-            inputFormatters: textInputFormatters,
-            keyboardType: keyboardType,
-            onChanged: onChanged,
-            onTap: onTap,
-          ),
+    return Container(
+      width: width ?? 160,
+      child: TextFormField(
+        autofocus: autofocus,
+        controller: controller,
+        key: key,
+        validator: validator,
+        autovalidateMode: autovalidateMode,
+        keyboardAppearance: Brightness.light,
+        textCapitalization: textCapitalization,
+        autocorrect: isAutocorrectActive,
+        textAlign: TextAlign.start,
+        decoration: InputDecoration(
+          helperText: helperText,
+          filled: false,
+          hintText: hintText,
+          hintStyle: Styles.hintStyle,
+          helperStyle: Styles.helperStyle,
         ),
-      ],
+        inputFormatters: textInputFormatters,
+        keyboardType: keyboardType,
+        onChanged: onChanged,
+        onTap: onTap,
+      ),
     );
   }
 }

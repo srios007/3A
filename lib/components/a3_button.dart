@@ -10,12 +10,14 @@ class A3Button extends StatelessWidget {
     this.height,
     this.width,
     this.padding,
+    this.canPush = false,
   });
   String title;
   Color backgroundColor;
   Function onPressed;
   double height;
   double width;
+  bool canPush;
   EdgeInsetsGeometry padding;
 
   @override
@@ -32,14 +34,14 @@ class A3Button extends StatelessWidget {
               color: Palette.a3Color,
               width: 2,
             ),
-            color: Palette.white,
+            color: canPush ? Palette.a3Color : Palette.white,
           ),
           child: CupertinoButton(
             padding: padding ?? EdgeInsets.zero,
             child: Center(
               child: Text(
                 title ?? "Continuar",
-                style: Styles.buttonStyle,
+                style: canPush ? Styles.activeButtonStyle : Styles.buttonStyle,
                 textAlign: TextAlign.center,
               ),
             ),

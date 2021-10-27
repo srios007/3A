@@ -17,6 +17,11 @@ class Styles {
     color: Palette.a3Color,
     fontWeight: FontWeight.w600,
   );
+  static TextStyle activeButtonStyle = TextStyle(
+    fontSize: 16,
+    color: Palette.white,
+    fontWeight: FontWeight.w600,
+  );
   static TextStyle normalLabelStyle = TextStyle(
     color: Palette.black,
     fontSize: 14.0,
@@ -31,5 +36,10 @@ class Styles {
     color: Color(0xFFC4C4C4),
     fontSize: 13,
     fontWeight: FontWeight.w400,
+  );
+   static TextStyle a3LabelStyle = TextStyle(
+    color: Palette.a3Color,
+    fontSize: 18.0,
+    fontWeight: FontWeight.w500,
   );
 }
