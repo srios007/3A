@@ -107,12 +107,21 @@ class _SetMatrixSizeScreenState extends State<SetMatrixSizeScreen> {
                   title: 'Continuar',
                   canPush: canPushBool,
                   onPressed: () {
-                    Navigator.push(
-                      context,
-                      CupertinoPageRoute(
-                        builder: (context) => InstructionsScreen(),
-                      ),
-                    );
+                    if (canPushBool) {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(
+                          builder: (context) => BoardScreen(
+                            height: int.parse(
+                              heightController.text.trim(),
+                            ),
+                            width: int.parse(
+                              widthController.text.trim(),
+                            ),
+                          ),
+                        ),
+                      );
+                    }
                   },
                 ),
               ],
