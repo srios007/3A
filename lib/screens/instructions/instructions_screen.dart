@@ -37,7 +37,7 @@ class _InstructionsScreenState extends State<InstructionsScreen> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
                   child: Text(
-                    '1. Tendras que elegir el tamaño de la matriz al iniciar el desafio y así poder darle tamaño a un tablero coo el que encontrarás a continuación.',
+                    '1. Tendrás que elegir el tamaño de la matriz al iniciar el desafío y así poder darle tamaño a un tablero como el que encontrarás a continuación.',
                     style: Styles.normalLabelStyle,
                     textAlign: TextAlign.justify,
                   ),
@@ -46,7 +46,7 @@ class _InstructionsScreenState extends State<InstructionsScreen> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 20, 0, 40),
                   child: Text(
-                    '2. En la siguiente pestaña encontrarás el tablero con el tamaño que anteriormente elegiste, tendrás un botón el cual te calculará el numeró total de islas que están presentes en el tablero',
+                    '2. En la siguiente pestaña encontrarás el tablero con el tamaño que anteriormente elegiste, al ingresar a la pestaña podrás ver el número de islas. Adicional a esto si quieres cambiar alguna isla por agua o viceversa solo basta con tocarlo y el número de islas se recalculará.',
                     style: Styles.normalLabelStyle,
                     textAlign: TextAlign.justify,
                   ),

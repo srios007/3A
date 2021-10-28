@@ -25,7 +25,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 24, 0, 0),
                 child: Text(
-                  'Bienvenido al desafío de las islas para 3 Astronautas.',
+                  'Bienvenido al desafío de encontrar las islas para Tres Astronautas.',
                   style: Styles.welcomeTitleStyle,
                   textAlign: TextAlign.center,
                 ),
@@ -33,7 +33,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 0, 0, 40),
                 child: Text(
-                  'Desarrollado por Santiago Rios Valero',
+                  'Desarrollado por: Santiago Rios Valero',
                   style: Styles.welcomeSubtitleStyle,
                   textAlign: TextAlign.center,
                 ),

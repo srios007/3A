@@ -43,7 +43,7 @@ class _SetMatrixSizeScreenState extends State<SetMatrixSizeScreen> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(0, 0, 0, 40),
                   child: Text(
-                    'Tendrás que indicar el alto y el ancho de la matriz',
+                    'Tendrás que indicar el alto y el ancho del tablero.',
                     style: Styles.welcomeSubtitleStyle,
                     textAlign: TextAlign.center,
                   ),
@@ -90,6 +90,10 @@ class _SetMatrixSizeScreenState extends State<SetMatrixSizeScreen> {
                       hintText: '5',
                       autovalidateMode: AutovalidateMode.onUserInteraction,
                       keyboardType: TextInputType.number,
+                      textInputFormatters: [
+                        // ignore: deprecated_member_use
+                        WhitelistingTextInputFormatter.digitsOnly
+                      ],
                       onChanged: (text) {
                         _canPush();
                       },
