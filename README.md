@@ -1,5 +1,5 @@
 # Desafío Tres Astronautas
-### Desarrollado por:
+## Desarrollado por:
 
 Santiago Rios Valero
 
