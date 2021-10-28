@@ -45,7 +45,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               A3Button(
                 title: 'Empezar',
                 onPressed: () {
-                   Navigator.push(
+                  Navigator.push(
                     context,
                     CupertinoPageRoute(
                       builder: (context) => SetMatrixSizeScreen(),

@@ -1,8 +1,6 @@
 import 'dart:math';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:prueba_3_astronautas/components/components.dart';
 import 'package:prueba_3_astronautas/config/config.dart';
 import 'package:prueba_3_astronautas/models/models.dart';
 import 'package:prueba_3_astronautas/screens/challenge/algorithm.dart';
@@ -49,8 +47,7 @@ class _BoardScreenState extends State<BoardScreen> {
           numbers.add(matrix[i][j]);
         }
       }
-      islands = algorith.countIslands(
-                        matrix, widget.height, widget.width);
+      islands = algorith.countIslands(matrix, widget.height, widget.width);
     });
     super.initState();
   }
@@ -58,6 +55,7 @@ class _BoardScreenState extends State<BoardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Palette.white,
       appBar: AppBar(
         backgroundColor: Palette.white,
         elevation: 0,
@@ -148,8 +146,6 @@ class _BoardScreenState extends State<BoardScreen> {
                       );
                     }),
               ),
-            
-           
             ],
           ),
         ),

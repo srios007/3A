@@ -19,6 +19,7 @@ class _SetMatrixSizeScreenState extends State<SetMatrixSizeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Palette.white,
       appBar: AppBar(
         backgroundColor: Palette.white,
         elevation: 0,
